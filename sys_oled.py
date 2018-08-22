@@ -112,12 +112,12 @@ def main():
     if 'HELIOS4_STARTING' in os.environ:
         logo(device, "System Starting...")
         device.persist = True
-	time.sleep(6)
+        time.sleep(6)
     else:
         while True:
             status(device)
             time.sleep(interval)
-	    logo(device, host_time())
+            logo(device, host_time())
             time.sleep(interval)
 
 if __name__ == "__main__":
