@@ -43,7 +43,7 @@ def bytes2human(n):
             value = float(n) / prefix[s]
             if s in ['K', 'M']:
                 return '%d%s' % (int(value), s)
-            else
+            else:
                 return '%.1f%s' % (value, s)
     return "%sB" % n
 
